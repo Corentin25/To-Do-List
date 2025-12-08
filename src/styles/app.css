@@ -9,15 +9,41 @@
 #root {
     display: flex;
     flex-direction: column;
-    background-color: #222222;
     color: white;
     margin: 0;
     min-width: 370px;
     min-height: 100vh;
-    background-image: url("../assets/react.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#root::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  background-image: url("../assets/react.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20%; 
+  animation: spinImg 50s linear infinite; 
+}
+
+@keyframes spinImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #222222;
+  margin: 0;
 }
 
 header {  
@@ -130,6 +156,7 @@ li {
 
 .fa-check-square, .fa-square {
     font-size: 37px;
+    cursor: pointer;
 }
 
 li span {
@@ -171,10 +198,17 @@ footer a {
     opacity: 0.5;
 }
 
+/* MOBILE BREAKPOINT */
+
 @media screen and (max-width:768px) {
     html {
       font-size: 80%;
     }
+
+    #root::before {
+        background-size: 55%; 
+    }
+
     main {
         width: 100%;
         padding: 0.5rem;
