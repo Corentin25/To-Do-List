@@ -1,0 +1,45 @@
+form {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 1rem 0rem;
+}
+
+form input {
+  font-size: 1.1rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: #00000020 8px 8px 0px;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+form button {
+  font-size: 1.1rem;
+  background-color: #0040ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  box-shadow: #00000020 8px 8px 0px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+form button:hover {
+  background-color: #1d13df;
+}
+
+/* MOBILE BREAKPOINT */
+
+@media screen and (max-width: 768px) {
+  form {
+    width: 95%;
+  }
+  form button {
+    font-size: 1rem;
+    padding: 0.5rem 1.1rem;
+  }
+}

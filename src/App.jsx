@@ -1,10 +1,10 @@
 import { Fragment, useState, useEffect } from "react";
-import { Header } from "./Header.jsx";
-import { Form } from "./Form.jsx";
-import { List } from "./List.jsx";
-import { Footer } from "./Footer.jsx";
+import { Header } from "./components/Header/Header.jsx";
+import { Form } from "./components/Form/Form.jsx";
+import { List } from "./components/List/List.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 import "@fortawesome/fontawesome-free/css/all.css";
-import "../styles/app.css";
+import "./index.css";
 
 function App() {
   const [allTodo, setAlltodo] = useState(() => {

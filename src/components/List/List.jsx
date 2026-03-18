@@ -1,3 +1,5 @@
+import "./list.css";
+
 export const List = ({ allTodo, setAlltodo }) => {
   const checked = (index) => {
     const newTodoAdded = [...allTodo];
