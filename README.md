@@ -1,16 +1,53 @@
-# React + Vite
+# To-Do List (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## À propos du projet
 
-Currently, two official plugins are available:
+Ce projet a été initialement abordé dans le cadre d'une formation React dispensée par Steeve Lefort (Formacitron). 
+Afin d'optimiser l'expérience de développement et de m'aligner sur les standards actuels, j'ai entièrement restructuré et adapté le code initial pour utiliser **Vite** ainsi que les pratiques modernes de l'écosystème React.
+Il s'agit d'une application de gestion de tâches dynamique permettant d'organiser son quotidien via une interface utilisateur réactive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctionnalités principales
 
-## React Compiler
+* **Ajout de tâches :** Saisie rapide de nouveaux éléments à traiter.
+* **Gestion du statut :** Possibilité de marquer une tâche comme terminée.
+* **Suppression :** Retrait des éléments de la liste.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Stack Technique
 
-## Expanding the ESLint configuration
+* **Framework :** React.js
+* **Bundler :** Vite
+* **Langage :** JavaScript (ES6+) / JSX
+* **Stylisation :** CSS3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation et lancement en local
+
+Pour cloner et exécuter ce projet sur votre machine, suivez les étapes ci-dessous :
+
+1. **Cloner le dépôt :**
+   ```bash
+   git clone [https://github.com/Corentin25/To-Do-List.git](https://github.com/Corentin25/To-Do-List.git)
+   ```
+
+2. **Naviguer dans le dossier du projet :**
+   ```bash
+   cd To-Do-List
+   ```
+
+3. **Installer les dépendances :**
+   ```bash
+   npm install
+   ```
+
+4. **Lancer le serveur de développement :**
+   ```bash
+   npm run dev
+   ```
+
+## Auteur
+
+**Corentin Busi** - Intégrateur Web / Développeur Front-End
+* GitHub : [@Corentin25](https://github.com/Corentin25)
+
+## Remerciements
+
+* Base du projet issue de la formation React de Steeve Lefort (Formacitron).
